@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Rainbow{% endblock %}
+{% block content %}
+<h1>Verify queries:</h1>
+<p>fill in a bubble for EVERY track!</p>
+<form action="#" method="post">
+    {% for value in values %}
+    <h5>Select correct track for track {{value}}</h5>
+    <p>
+        {% for song in queries[value] %}
+        <p>
+        <input type="radio" name="options{{value}}" id="{{song['id']}}" value="{{song['id']}}">
+        {{song['name']}} by {{song['artists'][0]['name']}}
+        </p>
+        {% endfor %}
+    </p>
+    {% endfor %}
+    <p>Please be patient when clicking submit! Rainbow works hard to blend your music together and may take several
+        minutes to run, especially if more than 2 tracks have been entered. Even more so if they are across very different genres.
+        Go watch a youtube video or something if this is the case. </p>
+    <input type="submit">
+</form>
+
+{% endblock %}

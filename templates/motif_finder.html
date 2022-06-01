@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Matt's Website{% endblock %}
+{% block content %}
+<form action="#" method="post">
+    <h1>Motif Finder</h1>
+    <p><label for="motif">Motif to implant: (has to be made up of A's/T's/G's/C's)</label>
+    <input type="text" name="motif"/></p>
+    <p><label for="n">Max iterations without change (0-100,000)(if this is big it will take several minutes to give up on an imperfect result)</label>
+    <input type="number" name="n" min="0" max="100000"/></p>
+    <p><label for="extra-bases">Number of random bases to add to motifs (0-500)</label>
+    <input type="number" name="extra-bases" min="0" max="500"/></p>
+    <p><label for="strands">Strands of DNA (1-50)</label>
+    <input type="number" name="strands" min="1" max="50"/></p>
+    <input type="submit" value="Submit"/>
+</form>
+<h1>About this form:</h1>
+<p>This form provides an evaluation into Gibbs Sampling for motif recognition. Recently, I implemented the ability
+    to designate less conserved sites in your motif. Denote this with a vertical bar (|) between two bases that can be used, so for example
+    AG|AT can be interpreted as AGT or AAT. To learn more about Gibbs Sampling,
+    visit <a href="https://en.wikipedia.org/wiki/Gibbs_sampling">this link</a></p>
+<p>Have your own strands? Click <a href="/motif_finder/custom/">here</a></p>
+{% endblock %}

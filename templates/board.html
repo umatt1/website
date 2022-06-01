@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Matt's Website{% endblock %}
+{% block content %}
+<h1>Bored</h1>
+<p>Careful before hitting submit! You can only post once per session!</p>
+<form action="#" method="post">
+    <p><label for="message">Message:</label>
+    <input type="text" name="message"/></p>
+    <p><label for="image">Image link:</label>
+    <input type="text" name="image"/></p>
+    <input type="submit" value="Submit"/>
+</form>
+<h1>Recent posts:</h1>
+    {% for item in values%}
+<p><img src="{{item.image}}" width="250" height="250"> {{item.message}}</p>
+    {% endfor %}
+{% endblock %}

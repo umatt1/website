@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Matt's Website{% endblock %}
+{% block content %}
+<form action ="#" method="post">
+    <textarea rows="5" cols="60" name="text" placeholder="Separate strands by |'s"></textarea>
+    <p><label for="k">Motif size:</label>
+    <input type="text" name="k"/></p>
+    <p><label for="n">Max iterations without change (0-100,000)(if this is big it will take several minutes to give up on an imperfect result)</label>
+    <input type="number" name="n" min="0" max="100000"/></p>
+    <input type="submit" value="submit"/>
+</form>
+<h1>About this form:</h1>
+<p>This form provides an evaluation into Gibbs Sampling for motif recognition. In the future I'd like to add some
+extra parameters, especially involving a given motif, such as less conserved sites. To learn more about Gibbs Sampling,
+    visit <a href="https://en.wikipedia.org/wiki/Gibbs_sampling">this link</a></p>
+{% endblock %}

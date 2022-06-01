@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matt's Website</title>
+</head>
+<body>
+<form action="#" method="post">
+    <p>City: {{city}}</p>
+    <p>Weather: {{weather}}</p>
+    <p>Temperature: {{F}} F / {{C}} C</p>
+    <p>Like/dislike whether Michael is dressed appropriately for your weather</p>
+    <form action="#" method="post">
+
+        <h1>Michael's Top Recommendation:</h1>
+        <p><img src="{{ceras[0].link()}}" width="500" height="500"></p>
+        <input type="radio" name="options0" id="like" value="like"> {{ceras[0].likes()}} Likes
+        <input type="radio" name="options0" id="dislike" value="dislike"> {{ceras[0].dislikes()}} Dislikes
+        <input type="submit">
+        <h2>Other outfits michael might wear (from most to least likely):</h2>
+
+{% for value in values %}
+    <p><img src="{{ceras[value].link()}}" width="250" height="250"></p>
+        <input type="radio" name="options{{value}}" id="like" value="like"> {{ceras[value].likes()}} Likes
+        <input type="radio" name="options{{value}}" id="dislike" value="dislike"> {{ceras[value].dislikes()}} Dislikes
+{% endfor %}
+        <input type="submit">
+</form>
+
+</body>
+</html>

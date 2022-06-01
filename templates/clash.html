@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Matt's Website{% endblock %}
+{% block content %}
+<h1>clan clasher</h1>
+<form action="#" method="post">
+    <p><label for="id">Key (Similar to #Y9UGURY0, visible under profile):</label>
+    <input type="text" name="key"/></p>
+    <p><label for="mode">Village:</label>
+    <input type="radio" name="village" id="home" value="home"> home
+    <input type="radio" name="village" id="builderBase" value="builderBase"> builder base
+    <input type="radio" name="village" id="all" value="all"> all
+    <p>
+    <input type="submit" value="Submit"/>
+
+    </p>
+</form>
+<h1>About this form</h1>
+<p>This form creates a visualization of where your upgrades are at vs what their maximum is in clash of clans</p>
+{% endblock %}

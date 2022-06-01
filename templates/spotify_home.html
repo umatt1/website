@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Rainbow{% endblock %}
+{% block content %}
+<h1>Rainbow</h1>
+<form action="#" method="post">
+    <label for="tracks">Tracks:</label>
+    <input type="text" name="tracks">
+    <input type="submit" value="Submit"/>
+</form>
+<p>Rainbow accepts up to 5 comma separated tracks and generates a playlist by filling in transitions from track to track.
+Tracks entered are searched and then are manually verified in the next page. There is also an option to
+export created playlists to spotify. I would recommend trying only 2 tracks for your first run, as 3 or more may take
+    several minutes to run </p>
+<p>An example run of this might look like: (and you can copy paste this into the box above to test the form!) </p>
+<p>Island in The Sun, Ms. Jackson, Day 'N' Nite</p>
+<p>This would be a great way to create a playlist containing Island in the Sun by Weezer, Ms. Jackson by Outkast,
+and Day 'N' Nite by Kid Cudi all in one playlist with tracks that can bridge the gaps between these songs.</p>
+{% endblock %}

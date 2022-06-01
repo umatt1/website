@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Matt's Website{% endblock %}
+{% block content %}
+<h2>Heroes</h2>
+<p><img src='{{heroes}}' height='500' width='500'/></p>
+<h2>Troops</h2>
+<p><img src='{{troops}}' height='500' width='500'/></p>
+<h2>Spells</h2>
+<p><img src='{{spells}}' height='500' width='500'/></p>
+<h2>Upgrades remaining</h2>
+<h5>Heroes</h5>
+{% for hero in categorized_heroes %}
+<p>{{hero}} : {{categorized_heroes[hero]}}</p>
+{% endfor %}
+<h5>Troops</h5>
+{% for troop in categorized_troops %}
+<p>{{troop}} : {{categorized_troops[troop]}}</p>
+{% endfor %}
+<h5>Spells</h5>
+{% for spell in categorized_spells %}
+<p>{{spell}} : {{categorized_spells[spell]}}</p>
+{% endfor %}
+{% endblock %}

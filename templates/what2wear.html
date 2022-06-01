@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Matt's Website{% endblock %}
+{% block content %}
+<form action="#" method="post">
+    <h1>What Would Michael Wear?</h1>
+    <p><label for="location">Zip code:</label>
+    <input type="text" name="location"/></p>
+    <input type="submit" value="Submit"/>
+</form>
+<h1>About this form:</h1>
+<p>Michael is always dressed for the weather.</p>
+<p>Some zip codes you can try:</p>
+<li>48104 (Ann Arbor, MI)</li>
+<li>77007 (Houston, TX)</li>
+<li>99701 (Fairbanks, AK)</li>
+<li>60606 (Chicago, IL)</li>
+<li>90008 (Los Angeles, CA)</li>
+{% endblock %}

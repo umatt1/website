@@ -1,0 +1,6 @@
+snowboard_jacket,https://i.pinimg.com/originals/e1/e2/90/e1e2900013a09d2149fcada933e9db66.jpg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+shorts_and_tshirt,https://www.pointsincase.com/files/u3/michael-cera-winner.jpg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+light_jacket,https://i.pinimg.com/736x/2d/8b/82/2d8b822ab2ebedf800fd4082790e0c8d.jpg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+long_sleeves,https://www.celebritysizes.com/wp-content/uploads/2016/07/Michael-Cera.jpg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+jeans_and_tshirt,https://www.dailyherald.com/storyimage/DA/20140625/entlife/140629072/AR/0/AR-140629072.jpg&updated=201406260549&MaxW=900&maxH=900&noborder&Q=80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+coat,https://www.filmgarb.com/uploads/michael_cera-film-scott_pilgrim-scott_pilgrim_vs_the_world-jackets-scott_pilgrims_jacket.jpg,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

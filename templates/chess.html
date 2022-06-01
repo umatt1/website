@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Matt's Website{% endblock %}
+{% block content %}
+<h1>Opening Guru</h1>
+<form action="#" method="post">
+    <p><label for="id">Handle:</label>
+    <input type="text" name="id"/></p>
+    <p><label for="color">Color:</label>
+    <input type="radio" name="color" id="black" value="black"> White
+    <input type="radio" name="color" id="white" value="white"> Black
+    <p><label for="months">Months back to look (up to 36):</label>
+    <input type="number" name="months"/></p>
+    <p><label for="sort">Sorting:</label>
+    <input type="radio" name="sort" id="best" value="best"> Best
+    <input type="radio" name="sort" id="worst" value="worst"> Worst
+    <p><label for="mode">Game Mode (WIP):</label>
+    <input type="radio" name="mode" id="blitz" value="blitz"> blitz
+    <input type="radio" name="mode" id="rapid" value="rapid"> rapid
+    <input type="radio" name="mode" id="bullet" value="bullet"> bullet
+    <input type="radio" name="mode" id="all" value="all"> all
+    <p>
+    <input type="submit" value="Submit"/>
+
+    </p>
+</form>
+<h1>About this form</h1>
+<p>This tool parses the chess.com API for players' games over the last X months and calculates records for each opening with a link to it.
+Don't have a chess.com account? Try with one of these that I grabbed off of chess.com for you:</p>
+<p>Hikaru</p>
+<p>BrandonJacobson</p>
+{% endblock %}
